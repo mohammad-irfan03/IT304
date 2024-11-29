@@ -43,3 +43,31 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Styling for the Navigation Bar */
+nav {
+    background-color: #333; /* Dark background for the nav bar */
+    padding: 10px;         /* Space inside the nav bar */
+}
+
+nav ul {
+    list-style: none;      /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;         /* Horizontal layout for menu items */
+}
+
+nav ul li {
+    margin-right: 20px;    /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white;          /* Make links white */
+    font-size: 16px;       /* Set font size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
