@@ -1,3 +1,4 @@
+/* General Reset and Layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,83 +7,97 @@ body {
     color: #f5f5f5; /* Light text color for contrast */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     min-height: 100vh;
 }
 
+/* Header and Navigation */
 header {
-    background: #23272a; /* Slightly darker gray */
-    color: #f5f5f5;
-    padding: 20px;
+    background-color: #23272a; /* Slightly darker gray for header */
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
     width: 100%;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    color: #7289da; /* Soft blue for hover effect */
+    background-color: #7289da; /* Soft blue for hover effect */
+    color: #ffffff;
 }
 
+/* Main Content */
 main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 40px;
     text-align: center;
 }
 
 main h1 {
     font-size: 36px;
-    color: #ffffff; /* White text for main headings */
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 main p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
+    max-width: 800px;
 }
 
+/* Lists */
 ul {
-    padding-left: 0;
     list-style: none;
+    padding-left: 0;
 }
 
 ul li {
-    margin: 10px 0;
     font-size: 18px;
+    margin: 10px 0;
 }
 
+/* Footer */
 footer {
-    background: #23272a; /* Matching header background */
-    color: #f5f5f5;
+    background-color: #23272a; /* Match the header */
+    color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
-    margin-top: auto;
 }
 
+/* Links */
 a {
-    color: #7289da; /* Light blue for links */
+    color: #7289da;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #ffffff;
 }
+
